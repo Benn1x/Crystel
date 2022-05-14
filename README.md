@@ -8,6 +8,6 @@ for more Help use -h
 
 # installing
 
-`make install` this compiles and move cry to /usr/local/bin
-`make move` this Moves cry to /usr/local/bin if it is allready compiled
-`make compile` compiles cry
+`make install` this compiles and move cry to /usr/local/bin \n
+`make move` this Moves cry to /usr/local/bin if it is allready compiled \n
+`make compile` compiles cry \n
