@@ -13,3 +13,6 @@ for more Help use -h
 `make move` this Moves cry to /usr/local/bin if it is allready compiled 
 
 `make compile` compiles cry 
+
+# else
+Webpage: https://benn1x.daskju.com/crystel/
