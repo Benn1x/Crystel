@@ -26,8 +26,9 @@ int main(int argc, char **argv){
     if (arg_i=="-h" || arg_i == "--Help") {
       std::cout <<  '\n';
       std::cout <<  '\n';
-      std::cout << "      -f [File Name[-i input in file]]"<< '\n';
-      std::cout << "      -d [Directory Name]" << '\n';
+      std::cout << "      -f [File Name[-i input in file] to Create]"<< '\n';
+      std::cout << "      -d [Directory Name to Create]" << '\n';
+      std::cout << "      -df [File Name to Delete]" << '\n';
       std::cout <<  '\n';
       std::cout <<  '\n';
     }
@@ -77,6 +78,52 @@ int main(int argc, char **argv){
         std::cout << "      \033[1;32mThe Directory were sucssesfully created!\033[0m\n" << '\n';
       }
     }
+  if(arg_i == "-df"){
+    i++;
+    string tdFile = argv[i];
+    string dcFile = "rm "+tdFile;
+    string tdFileInput;
+    std::cout << '\n';
+    std::cout << '\n';
+    std::cout << "      Do you relly wont to continue? This would Delete the File: "<< tdFile << "(y|n)";
+    std::cin >> tdFileInput;
+    std::cout << '\n';
+    std::cout << '\n';
+    std::cout << '\n';
+    if (tdFileInput == "yes"|| tdFileInput == "y") {
+      system(dcFile.c_str());
+      std::cout << "      \033[1;32mThe File were sucssesfully Delete!\033[0m\n";
+    }else{
+      std::cout << '\n';
+      std::cout << '\n';
+      std::cout << "      Process canceled" << '\n';
+      std::cout << '\n';
+      std::cout << '\n';
+    }
+  }
+  if (arg_i == "-dd") {
+    i++;
+    string tdD = argv[i];
+    string dcD = "rmdir " + tdD;
+    string tdDinput;
+    std::cout << '\n';
+    std::cout << '\n';
+    std::cout << "      \033[1;31mDo you relly wont to continue? This would Delete the Directory: "<< tdD << "(y|n)\033[0m";
+    std::cin >> tdDinput;
+    std::cout << '\n';
+    std::cout << '\n';
+    std::cout << '\n';
+    if (tdDinput == "yes"|| tdDinput == "y") {
+      system(dcD.c_str());
+      std::cout << "      \033[1;32mThe Directory were sucssesfully Delete!\033[0m\n";
+    }else{
+      std::cout << '\n';
+      std::cout << '\n';
+      std::cout << "      Process canceled" << '\n';
+      std::cout << '\n';
+      std::cout << '\n';
+    }
+  }
 
   }
 
