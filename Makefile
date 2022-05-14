@@ -1,4 +1,4 @@
 $CC = g++
 move:
-	$C cr.cpp -o cr
-	sudo mv cr /usr/local/bin
+	$C cry.cpp -o cry
+	sudo mv cry /usr/local/bin
