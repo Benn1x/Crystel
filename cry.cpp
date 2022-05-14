@@ -29,6 +29,7 @@ int main(int argc, char **argv){
       std::cout << "      -f [File Name[-i input in file] to Create]"<< '\n';
       std::cout << "      -d [Directory Name to Create]" << '\n';
       std::cout << "      -df [File Name to Delete]" << '\n';
+      std::cout << "      -dd [Directory Name to Delete]" << '\n';
       std::cout <<  '\n';
       std::cout <<  '\n';
     }
