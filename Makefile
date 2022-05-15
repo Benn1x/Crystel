@@ -1,13 +1,13 @@
 $CC = g++
 .SILENT:
 install:
-	echo Compiling cry...
-	$C cry.cpp -o cry
-	echo Moving cry to /usr/bin
-	sudo mv cry /usr/bin
+	echo Compiling cy...
+	$C cy.cpp -o cy
+	echo Moving cy to /usr/bin
+	sudo mv cy /usr/bin
 move :
-	echo Moving cry to /usr/bin
-	sudo mv cry /usr/bin
+	echo Moving cy to /usr/bin
+	sudo mv cy /usr/bin
 compile:
-	echo Compiling cry...
-	$C cry.cpp -o cry
+	echo Compiling cy...
+	$C cy.cpp -o cy
