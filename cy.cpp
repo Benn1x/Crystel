@@ -30,6 +30,8 @@ int main(int argc, char **argv){
       std::cout << "      -d [Directory Name to Create]" << '\n';
       std::cout << "      -df [File Name to Delete]" << '\n';
       std::cout << "      -dd [Directory Name to Delete]" << '\n';
+      std::cout << "      -u Upadte Cy" << '\n';
+      std::cout << "      -v Shows The Version of Cy" << '\n';
       std::cout <<  '\n';
       std::cout <<  '\n';
     }
