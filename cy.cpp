@@ -82,7 +82,7 @@ int main(int argc, char **argv){
   if(arg_i == "-df"){
     i++;
     string tdFile = argv[i];
-    string dcFile = "rm "+tdFile;
+    string dcFile = "rm -r "+tdFile;
     string tdFileInput;
     std::cout << '\n';
     std::cout << '\n';
@@ -105,7 +105,7 @@ int main(int argc, char **argv){
   if (arg_i == "-dd") {
     i++;
     string tdD = argv[i];
-    string dcD = "rmdir " + tdD;
+    string dcD = "rm -r " + tdD;
     string tdDinput;
     std::cout << '\n';
     std::cout << '\n';
@@ -124,6 +124,21 @@ int main(int argc, char **argv){
       std::cout << '\n';
       std::cout << '\n';
     }
+  }
+  if(arg_i == "-u"){
+    system("wget benn1x.daskju.com/crystel/package/cy.cpp");
+    std::cout << "Downlod 1" << '\n';
+    system("wget benn1x.daskju.com/crystel/package/Makefile");
+    std::cout << "Downlod 2" << '\n';
+    system("make compile");
+    system("rm cy.cpp");
+    system("rm Makefile");
+    system("sudo mv cy /usr/bin");
+    std::cout << "Update installed! Restart Now Services" << '\n';
+
+  }
+  if (arg_i == "-v") {
+    std::cout << "Version: 1.1" << '\n';
   }
 
   }
