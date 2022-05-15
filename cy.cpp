@@ -136,11 +136,11 @@ int main(int argc, char **argv){
     system("rm cy.cpp");
     system("rm Makefile");
     system("sudo mv cy /usr/bin");
-    std::cout << "Update installed! Restart Now Services" << '\n';
+    std::cout << "\033[1;32mUpdate installed! Restart Now Services\033[0m\n" << '\n';
 
   }
   if (arg_i == "-v") {
-    std::cout << "Version: 1.1" << '\n';
+    std::cout << "Version: 1.2" << '\n';
   }
 
   }
