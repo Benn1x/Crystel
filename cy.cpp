@@ -26,7 +26,7 @@ int main(int argc, char **argv){
     if (arg_i=="-h" || arg_i == "--Help") {
       std::cout <<  '\n';
       std::cout <<  '\n';
-      std::cout << "      -f [File Name[-i input in file] to Create]"<< '\n';
+      std::cout << "      -f [File Name[-i ""input in file""] to Create]"<< '\n';
       std::cout << "      -d [Directory Name to Create]" << '\n';
       std::cout << "      -df [File Name to Delete]" << '\n';
       std::cout << "      -dd [Directory Name to Delete]" << '\n';
@@ -45,27 +45,14 @@ int main(int argc, char **argv){
       }
       else{
         std::cout << "      \033[1;32mThe File were sucssesfully created!\033[0m\n";
-        if(argc >i+1){
-          string arg_i1 = argv[i+1];
-          int ui = i + 2;
-          int uj;
-          if (arg_i1 == "-i") {
+        string arg_in  = argv[i+1];
+        if(argc > i+1){
+          if (arg_in == "-i") {
+            i++;
+            i++;
+            string FiInp = argv[i];
             ofstream myfile(nFile);
-            for (size_t j = ui; j < argc; j++) {
-              string arg_j = argv[j];
-              if (arg_j == "{end}") {
-                uj = j;
-                myfile.close();
-                break;
-              }
-              if (arg_j == "\n") {
-                myfile << "\n";
-              }else{
-                string input = " " + arg_j;
-                myfile << input;
-              }
-            }
-            i = uj;
+            myfile << FiInp;
           }
         }
       }
