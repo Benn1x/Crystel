@@ -26,7 +26,7 @@ int main(int argc, char **argv){
     if (arg_i=="-h" || arg_i == "--Help") {
       std::cout <<  '\n';
       std::cout <<  '\n';
-      std::cout << "      -f [File Name[-i ""input in file""] to Create]"<< '\n';
+      std::cout << "      -f [File Name[-i \"Text input for the File\"] to Create]"<< '\n';
       std::cout << "      -d [Directory Name to Create]" << '\n';
       std::cout << "      -df [File Name to Delete]" << '\n';
       std::cout << "      -dd [Directory Name to Delete]" << '\n';
