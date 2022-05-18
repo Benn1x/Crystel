@@ -2,38 +2,38 @@
 
 
 ## `-f`
-Usage:\
+### Usage:
 -f [File Name to Create] -i ["Text input for the File"]\
-Action:
+### Action:
 Creates a File and write directly in to it
 
 
 ## `-d`
-Usage:\
+### Usage:
 -d [Directory Name to Create]\
-Action:\
+### Action:
 Creates a Directory
 
 
 ## `-df`
-Usage:\
+### Usage:
 -df [File Name to Delete]\
 Action:\
 Deletes a File
 
 
 ## `-dd`
-Usage:\
+### Usage:
 -dd [Directory Name to Delete]\
-Action:\
+### Action:
 Deletes a Directory
 
 
 ## `-u`
-Action:\
-Update Cy
+### Action:
+Updates Cy
 
 
 ## `-v`
-Action:\
+### Action:
 Shows the Version of Cy
