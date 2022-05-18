@@ -3,8 +3,7 @@ a simple Command Libary
 
 # usage
 
-cry -f [file name -i [input what is pre writen in the file ]] -d [Directory Name ]
-for more Help use -h
+Find out more in the [Docs.md]{https://github.com/Benn1x/Crystel/blob/master/Docs.md}
 
 # installing
 
