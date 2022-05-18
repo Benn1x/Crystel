@@ -3,8 +3,8 @@ a simple Command Libary
 
 # usage
 
-Find out more in the [Docs.md]{https://github.com/Benn1x/Crystel/blob/master/Docs.md}
-
+Find out more in the 
+[Docs.md](https://github.com/Benn1x/Crystel/blob/master/Docs.md)
 # installing
 
 `make install` this compiles and move cry to /usr/local/bin
