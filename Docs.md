@@ -3,7 +3,7 @@
 
 ## `-f`
 ### Usage:
--f [File Name to Create] -i ["Text input for the File"]\
+-f [File Name to Create] -i ["Text input for the File"]
 ### Action:
 Creates a File and write directly in to it
 
