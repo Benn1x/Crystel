@@ -47,8 +47,8 @@ int main(int argc, char **argv){
       }
       else{
         std::cout << "      \033[1;32mThe File were sucssesfully created!\033[0m\n";
-        string arg_in  = argv[i+1];
         if(argc > i+1){
+          string arg_in  = argv[i+1];
           if (arg_in == "-i") {
             i++;
             i++;
