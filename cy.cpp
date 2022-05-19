@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <cstdlib>
 #include <fstream>
+#include <dirent.h>
+#include <sys/stat.h>
 using namespace std;
 
 
@@ -60,13 +62,11 @@ int main(int argc, char **argv){
     if (arg_i == "-d") {
       i++;
       string nDic = argv[i];
-      string coDic = "mkdir "+ nDic;
-      const int cDic = system(coDic.c_str());
-      if(256 == cDic){
-        std::cout << "      \033[1;31mAn Error Occurred while performing this Command\033[0m\n" << '\n';
-      }else{
-        std::cout << "      \033[1;32mThe Directory were sucssesfully created!\033[0m\n" << '\n';
-      }
+      if(mkdir(nDic.c_str(), 0777)== -1){
+          std::cout << "      \033[1;31mAn Error Occurred while performing this Command\033[0m\n" << '\n';
+        }else{
+          std::cout << "      \033[1;32mThe Directory were sucssesfully created!\033[0m\n" << '\n';
+        }
     }
   if(arg_i == "-df"){
     i++;
